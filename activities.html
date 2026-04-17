@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Present! 🎁</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="activities.css">
+</head>
+<body>
+    <div class="magic-sparkles"></div>
+    <div class="floating-hearts"></div>
+
+    <div class="container">
+        <div class="title-section simple-title">
+            <h1>Find Your Present! 🎁</h1>
+            <p>Click on the cards to find the hidden present! Only ONE card has the special reward...</p>
+        </div>
+
+        <div class="game-section">
+            <div class="cards-grid" id="cardsGrid"></div>
+        </div>
+
+        <div class="message-section">
+            <div id="gameMessage" class="game-message"></div>
+        </div>
+    </div>
+
+    <div class="present-modal" id="presentModal">
+        <div class="present-content">
+            <div class="present-box">🎁</div>
+            <h2>You Found It! 🎉</h2>
+            <p class="present-message" id="presentMessage"></p>
+            <button class="modal-button" id="modalCloseBtn">Awesome! 💕</button>
+        </div>
+    </div>
+
+    <div class="interest-modal" id="interestModal">
+        <div class="interest-content">
+            <h2>Are you interested with this game? 🎮</h2>
+            <p>Let's go to another activity!</p>
+            <button class="modal-button" id="sureBtn">Sure! 🚀</button>
+        </div>
+    </div>
+
+    <script src="activities.js"></script>
+</body>
+</html>
